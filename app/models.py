@@ -8,19 +8,24 @@ from django.db import models
 class TipoProducto(models.Model):
     tipo = models.CharField(max_length=20)
 
-    def __str__(self):
+    def _str_(self):
         return self.tipo
 
 
 class TipoMascota(models.Model):
     tipo = models.CharField(max_length=20)
 
-    def __str__(self):
+    def _str_(self):
         return self.tipo
 
 
 
-    
+class TipoCliente(models.Model):
+    tipo = models.CharField(max_length=20)
+
+    def _str_(self):
+        return self.tipo
+
 
 
 
@@ -33,7 +38,7 @@ class Producto(models.Model):
     stock = models.IntegerField()
     tipo = models.ForeignKey(TipoProducto,on_delete=models.CASCADE)
 
-    def __str__(self):
+    def _str_(self):
         return self.nombre
 
 
@@ -43,9 +48,22 @@ class Mascota(models.Model):
     nombre = models.CharField(max_length=20)
     raza = models.CharField(max_length=20)
     años = models.IntegerField()
-    tipoMascota = models.ForeignKey(TipoMascota,on_delete=models.CASCADE)
+    tipo = models.ForeignKey(TipoMascota,on_delete=models.CASCADE)
 
-    def __str__(self):
+    def _str_(self):
+        return self.nombre
+
+
+
+
+class Cliente(models.Model):
+    rut = models.CharField(max_length=10)
+    nombre = models.CharField(max_length=20)
+    contraseña = models.CharField(max_length=20)
+    mail = models.CharField(max_length=50)
+    tipo = models.ForeignKey(TipoCliente,on_delete=models.CASCADE)
+
+    def _str_(self):
         return self.nombre
 
 
@@ -55,9 +73,3 @@ class Mascota(models.Model):
 
 
     # admin ---- admin1
-
-
-
-
-
-
