@@ -1,0 +1,478 @@
+
+<!-- BASE SIN REGISTRO -->
+
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1>Bienvenidos a Petshop <br>
+            Productos Recomendados
+        </h1>
+        <p></p>
+    </div>
+</div>
+
+
+
+<div class="container mt-100">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img
+                                src="https://http2.mlstatic.com/medalla-chapita-llavero-mascotas-perros-gatos-foto-souvenirs-D_NQ_NP_845227-MLA28239414256_092018-F.jpg"
+                                alt="Category" width="200"></div>
+                        <div class="thumblist"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg_Kw_LbekQE1XjiZCHGaaus34MisvsxFsJQ&usqp=CAU"
+                                alt="Category" width="107"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSM1ekieRIDCe4Ak9hbPmw2dQd73WMzV4LJg&usqp=CAU"
+                                alt="Category" width="100"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Medallas de identificacion</h4>
+                    <p class="text-muted">Precios desde $2.500</p><a class="btn btn-outline-primary btn-sm" href="collarperros.html"
+                        data-abc="true">Ver Productos</a>
+                        <br>  
+                        <br>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img
+                                src="https://demascotas.info/wp-content/uploads/2020/11/arnes-conejo2-1.png"
+                                alt="Category" width="200"></div>
+                        <div class="thumblist"><img
+                                src="data:image/jpeg;base64,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"
+                                alt="Category" width="162"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdOMWHS8Lv6s_iGLiVg9M5SKKd3n1ZQnE-GDwWaZ9WCTpIHGoIqropraSVpbTV0sh5ww&usqp=CAU"
+                                alt="Category" width="100"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Correas</h4>
+                    <p class="text-muted">Precios desde $3.500</p><a class="btn btn-outline-primary btn-sm" href="conecorrea.html"
+                        data-abc="true">Ver Productos</a>
+                        <br>  
+                        <br>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img
+                                src="https://cdn.shopify.com/s/files/1/0406/6882/3709/products/Gatos-Acessorios-Cat-Dog-Accessories-Small-Dogs-Bandana-Bib-Collar-Gift-for-Small-Dogs-Cats-Puppy.jpg?v=1602460326"
+                                alt="Category" width="200"></div>
+                        <div class="thumblist"><img
+                                src="https://s.cornershopapp.com/product-images/2182809.png?versionId=NZmFqNoGXY8Vzhqdf8H7Q.Y9RFkW2gZa"
+                                alt="Category" width="100"><img
+                                src="https://cf.shopee.cl/file/957746931fc3bd2c535ca9f6c324c94c" alt="Category"
+                                width="100"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Bandanas</h4>
+                    <p class="text-muted">Precios desde $1.500</p><a class="btn btn-outline-primary btn-sm" href="bandanagatos.html"
+                        data-abc="true">Ver Productos</a>
+                        <br>  
+                        <br>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+<div class="container mt-100">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img
+                                src="http://d3ugyf2ht6aenh.cloudfront.net/stores/608/745/products/9b1abda9-b6cb-42df-ba45-bed3576e277c1-14a30d090132e82a3c15405160982651-640-0.jpeg"
+                                alt="Category" width="200"></div>
+                        <div class="thumblist"><img
+                                src="https://m.media-amazon.com/images/I/81QJdM4p2-S._AC_SY355_.jpg"
+                                alt="Category" width="110"><img
+                                src="data:image/jpeg;base64,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"
+                                alt="Category" width="104"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Cepillo Para Mascotas</h4>
+                    <p class="text-muted">Precios desde $5.990</p><a class="btn btn-outline-primary btn-sm" href="#"
+                        data-abc="true">Ver Productos</a>
+                        <br>  
+                        <br>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img
+                                src="https://http2.mlstatic.com/D_NQ_NP_603218-MLC40350980249_012020-O.jpg"
+                                alt="Category" width="200"></div>
+                        <div class="thumblist"><img
+                                src="https://dojiw2m9tvv09.cloudfront.net/2905/product/fit-formula-rollo-cartilago4561.jpg"
+                                alt="Category" width="162"><img
+                                src="https://http2.mlstatic.com/D_NQ_NP_983805-MLC44250969253_122020-O.jpg"
+                                alt="Category" width="105"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Huesos De Cartilagos</h4>
+                    <p class="text-muted">Precios desde $6.990</p><a class="btn btn-outline-primary btn-sm" href="#"
+                        data-abc="true">Ver Productos</a>
+                        <br>  
+                        <br>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img
+                                src="https://ae01.alicdn.com/kf/H6a912fc766864a668f22c7da4046639cG/Casa-de-juegos-de-rbol-para-gatos-cubo-cueva-plataforma-rascador-poste-y-bola-juguete-muebles.jpg_Q90.jpg_.webp"
+                                alt="Category" width="200"></div>
+                        <div class="thumblist"><img
+                                src="https://http2.mlstatic.com/D_NQ_NP_867866-MLM44507284210_012021-O.jpg"
+                                alt="Category" width="100"><img
+                                src="https://www.miauscota.com.ar/wp-content/uploads/2020/12/casa1.jpg" alt="Category"
+                                width="100"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Casas Para Gatos</h4>
+                    <p class="text-muted">Precios desde $20.000</p><a class="btn btn-outline-primary btn-sm" href="#"
+                        data-abc="true">Ver Productos</a>
+                        <br>  
+                        <br>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="jumbotron1 jumbotron-fluid  ">
+    <div class="container">
+        <h1></h1>
+        <p></p>
+    </div>
+</div>
+
+
+
+<div class="container mt-100">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="container d-flex justify-content-center align-items-center">
+                            <div class="card"> <span class="percent"></span>
+                                <div class="card-image"> <img
+                                        src="https://garden-fr.desigusxpro.com/wp-content/uploads/2020/04/karlikovaja_babochka.jpg"
+                                        width="300"> </div>
+                                <div class="card-inner"> <span></span>
+
+                                    <div class="price"> <span></span> <sup></sup> </div>
+                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Conejito Mariposa</h4>
+                    <p class="text-muted">Me llamo Canelita tengo 5 meses, busco un dueño que me ame y cuide</p><a class="btn btn-outline-primary btn-sm" href="#"
+                        data-abc="true">Adoptar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="container d-flex justify-content-center align-items-center">
+                            <div class="card"> <span class="percent"></span>
+                                <div class="card-image"> <img
+                                        src="https://soyfotografodeperros.com/wp-content/uploads/2019/10/Cachorros-1.jpg"
+                                        width="267"> </div>
+                                <div class="card-inner"> <span></span>
+
+                                    <div class="price"> <span></span> <sup></sup> </div>
+                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Perrito Amoroso</h4>
+                    <p class="text-muted">Me llamo Tambi tengo 2 meses, soy muy jugueton quiero que me hagan arto cariño y me den mucha comida</p><a class="btn btn-outline-primary btn-sm" href="#"
+                        data-abc="true">Adoptar</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="container d-flex justify-content-center align-items-center">
+                            <div class="card"> <span class="percent"></span>
+                                <div class="card-image"> <img
+                                        src="https://cdn.pixabay.com/photo/2021/04/23/12/54/cat-6201643_960_720.jpg"
+                                        width="318"> </div>
+                                <div class="card-inner"> <span></span>
+                                    <div class="price"> <span></span> <sup></sup> </div>
+                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Gatito Tierno</h4>
+                    <p class="text-muted">Me llamo Pelusa tengo 3 años soy muy regalona y traviesa busco un dueño que me de mucho amor</p><a class="btn btn-outline-primary btn-sm" href="#"
+                        data-abc="true">Adoptar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container mt-100">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="container d-flex justify-content-center align-items-center">
+                            <div class="card"> <span class="percent"></span>
+                                <div class="card-image"> <img
+                                        src="https://estaticos.muyinteresante.es/uploads/images/article/5b6d6f495bafe8b4bf12d6c7/loro-verde-en-jaula.jpg"
+                                        width="300"> </div>
+                                <div class="card-inner"> <span></span>
+
+                                    <div class="price"> <span></span> <sup></sup> </div>
+                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Loro Argentino</h4>
+                    <p class="text-muted">Me llamo Matias tengo 2 años soy un lorito muy simpatico, me encanta llamar la atención</p><a class="btn btn-outline-primary btn-sm" href="#"
+                        data-abc="true">Adoptar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="container d-flex justify-content-center align-items-center">
+                            <div class="card"> <span class="percent"></span>
+                                <div class="card-image"> <img
+                                        src="https://openrevista.com/wp-content/uploads/2019/12/perrito-callejero-703x450.jpg"
+                                        width="352"> </div>
+                                <div class="card-inner"> <span></span>
+
+                                    <div class="price"> <span></span> <sup></sup> </div>
+                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Perrito Amigable</h4>
+                    <p class="text-muted">Me llamo sultan tengo 6 meses, soy muy buen compañero y nunca te abandonare si me cuidas</p><a class="btn btn-outline-primary btn-sm" href="#"
+                        data-abc="true">Adoptar</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6 mb-10">
+            <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                    <div class="inner">
+                        <div class="container d-flex justify-content-center align-items-center">
+                            <div class="card"> <span class="percent"></span>
+                                <div class="card-image"> <img
+                                        src="https://t1.ea.ltmcdn.com/es/posts/4/9/5/curiosidades_sobre_los_erizos_de_tierra_23594_orig.jpg"
+                                        width="340"> </div>
+                                <div class="card-inner"> <span></span>
+                                    <div class="price"> <span></span> <sup></sup> </div>
+                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Erizo De Tierra</h4>
+                    <p class="text-muted">Me llamo Espinita tengo 3 años, soy muy tierno y me encanta que me acaricien la barriga</p><a class="btn btn-outline-primary btn-sm" href="#"
+                        data-abc="true">Adoptar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-info text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/petshop.cl"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.instagram.com/fundacionanimalia/?hl=es" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/jose-agurto-8165aa223/" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://github.com/Bryan747474/Caso/settings/access?guidance_task=" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Subscribirse a nuestro boletin</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Correo</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribirse
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Pagina Web dedicada exclusivamente a realizar el aporte a la fundacion sin fines de lucro, la adopción y la adquicisión de animales domesticos y exoticos
+                    asi como tambien alimentos y accesorios para estos.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+
+        </div>
+
+
+
+        <div class="text-center p-3" style="background-color: rgb(167, 98, 54);">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Pet Shop.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>
